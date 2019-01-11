@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
     }).finished.then(() => {
       anime({
         targets: arcs,
-        rotate: "+=180deg",
+        rotate: "+=1turn",
         duration: 3000,
         loop: true,
         easing: "linear"
