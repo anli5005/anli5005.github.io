@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-md navbar-light navbar-anli" id="main-navbar">
+  <a class="navbar-brand" href="/">{% include logo.html class="logo-animated pointer-events-none" %}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar-content" aria-controls="main-navbar-content" aria-expanded="false" aria-label="Toggle navigation"></button>
+  <div class="collapse navbar-collapse" id="main-navbar-content">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item {% if page.navItem == 'about' %}active{% endif %}">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item {% if page.navItem == 'projects' %}active{% endif %}">
+        <a class="nav-link" href="/projects">Projects</a>
+      </li>
+    </ul>
+    <div class="navbar-social">
+      <a href="https://github.com/anli5005" class="bg-github text-white"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</nav>

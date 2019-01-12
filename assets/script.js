@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-  let arcs = document.querySelector(".logo-animated .logo-arcs");
+  let arcs = document.querySelectorAll(".logo-animated .logo-arcs");
   if (arcs) {
     anime({
       targets: arcs,

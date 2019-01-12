@@ -2,12 +2,22 @@ $bg: #edf4ff;
 $secondary: #737c98;
 $light: #d0e1ff;
 $primary: #337bed;
-$text: #021d46;
+$text: #0f2d5b;
+$dark: #25416c;
+
+$theme-colors: (
+  "bg": $bg,
+  "text": $text,
+  "github": #333
+);
 
 $body-bg: $bg;
 $body-color: $text;
 
 $jumbotron-bg: $light;
+
+$footer-bg: $dark;
+$footer-color: white;
 
 $font-family-base: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
 
@@ -15,7 +25,4 @@ $h1-font-size: 4rem;
 $headings-font-family: "Europa", europa, "Helvetica Neue", "Helvetica", arial, sans-serif;
 $headings-font-weight: 700;
 
-$theme-colors: (
-  "bg": $bg,
-  "text": $text
-);
+$navbar-social-link-height: 30px;

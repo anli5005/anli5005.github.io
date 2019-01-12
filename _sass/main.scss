@@ -13,10 +13,68 @@ html, body {
   transform-origin-y: 48%;
 }
 
-h1 {
-  font-weight: 200;
+.navbar .logo-animated {
+  width: $navbar-brand-height;
+  height: $navbar-brand-height;
 }
 
-h2, h3 {
-  font-weight: normal;
+.navbar-anli {
+  background-color: $light;
+  font-family: $headings-font-family;
+  font-weight: $font-weight-bold;
+  letter-spacing: 1px;
+
+  .navbar-nav {
+    .nav-link {
+      text-transform: uppercase;
+      color: rgba($text, 0.3);
+
+      &:hover, &:active {
+        color: rgba($text, 0.6);
+      }
+
+      &:focus {
+        color: rgba($text, 0.7);
+      }
+    }
+
+    .nav-item.active .nav-link {
+      color: $text;
+    }
+  }
+}
+
+.navbar-social {
+  a {
+    border-radius: 50%;
+    width: $navbar-social-link-height;
+    height: $navbar-social-link-height;
+    text-align: center;
+    line-height: $navbar-social-link-height;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: $navbar-social-link-height * 0.6;
+  }
+}
+
+.pointer-events-none {
+  pointer-events: none !important;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+.footer {
+  background-color: $footer-bg;
+  color: $footer-color;
+
+  a {
+    color: $footer-color;
+    text-decoration: underline;
+
+    &:hover, &:active, &:focus {
+      color: rgba($footer-color, 0.8);
+    }
+  }
 }
