@@ -123,3 +123,11 @@ html, body {
     position: relative;
   }
 }
+
+.sticky-top {
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    position: -webkit-sticky;
+    top: 0;
+    z-index: $zindex-sticky;
+  }
+}
