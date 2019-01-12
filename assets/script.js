@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
       anime({
         targets: arcs,
         rotate: "+=1turn",
-        duration: 3000,
+        duration: 6000,
         loop: true,
         easing: "linear"
       });
