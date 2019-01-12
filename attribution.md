@@ -11,3 +11,4 @@ The following resources were used in the making of this website:
 * [Font Awesome Free v5.6.3](https://fontawesome.com)
 * [Jekyll](https://jekyllrb.com)
 * [Github Pages](https://pages.github.com)
+* [Scratchlogo.svg](https://commons.wikimedia.org/wiki/File:Scratchlogo.svg)

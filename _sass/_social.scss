@@ -1,0 +1,17 @@
+.social-scratch {
+  &:hover {
+    color: #ff8c1a;
+  }
+
+  .fa-scratch {
+    transform: translate(-6px, -5px);
+  }
+}
+
+.social-youtube:hover {
+  color: #ff0000;
+}
+
+.social-quizlet:hover {
+  color: #4257b2;
+}

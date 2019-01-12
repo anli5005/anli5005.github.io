@@ -1,8 +1,10 @@
 @import 'variables';
 @import 'bootstrap/bootstrap';
+@import 'safearea';
+@import 'social';
 
 html, body {
-  height: 100%;
+  min-height: 100%;
 }
 
 .logo-arcs {
@@ -11,6 +13,7 @@ html, body {
   left: 0;
   transform-origin-x: 50%;
   transform-origin-y: 48%;
+  opacity: 0;
 }
 
 .navbar .logo-animated {
@@ -54,7 +57,17 @@ html, body {
     display: inline-block;
     margin-left: 8px;
     font-size: $navbar-social-link-height * 0.6;
+    color: rgba($text, 0.5);
+    vertical-align: middle;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
+}
+
+.navbar-spacer {
+  height: 56px;
 }
 
 .pointer-events-none {
@@ -63,6 +76,10 @@ html, body {
 
 .list-style-none {
   list-style: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }
 
 .footer {
@@ -76,5 +93,33 @@ html, body {
     &:hover, &:active, &:focus {
       color: rgba($footer-color, 0.8);
     }
+  }
+}
+
+#main-navbar.sticky-top {
+  .navbar-brand {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .navbar-nav {
+    right: $navbar-brand-height + $navbar-padding-x;
+    transition: right 0.5s;
+  }
+
+  &.showing-brand {
+    .navbar-brand {
+      opacity: 1;
+    }
+
+    .navbar-nav {
+      right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up("md") {
+  #main-navbar.sticky-top .navbar-nav {
+    position: relative;
   }
 }
