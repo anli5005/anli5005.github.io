@@ -131,3 +131,30 @@ html, body {
     z-index: $zindex-sticky;
   }
 }
+
+.heading-muted {
+  text-transform: uppercase;
+  font-size: $font-size-base;
+  letter-spacing: 1px;
+}
+
+.fancy-link {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $spacer;
+  background-color: white;
+  display: block;
+  margin: ($spacer / 2) $spacer ($spacer / 2) 0;
+  transition: box-shadow 0.2s, color 0.2s;
+  width: $fancy-link-width;
+  font-family: $headings-font-family;
+
+  &:hover {
+    box-shadow: $box-shadow-lg;
+    text-decoration: none;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

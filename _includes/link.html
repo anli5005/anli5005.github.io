@@ -1,0 +1,5 @@
+<a class="fancy-link" href="{{include.href}}" {% if include.target %}target="{{include.target}}"{% endif %}>
+  <h5 class="m-0">{{include.title}}</h5>
+  {% if include.description %}<p>{{include.description}}</p>{% endif %}
+  <p class="text-secondary">{{include.domain}} <i class="fas fa-arrow-right"></i></p>
+</a>

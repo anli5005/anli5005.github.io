@@ -18,6 +18,16 @@ title: anli5005
 </header>
 {% include nav.html sticky="true" %}
 <div class="container py-5 pl-sa" id="main">
-  <p class="h1 w-100 text-center">Rest of website coming soon</p>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <h3 class="heading-muted">Quick Links</h3>
+      <div class="d-flex flex-wrap">
+        {% include link.html href="https://app.agendas.co" title="Agendas" description="Jot down tasks" domain="app.agendas.co" target="_blank" %}
+        {% include link.html href="https://yourbcabus.com" title="YourBCABus" description="Track BCA buses" domain="yourbcabus.com" target="_blank" %}
+        {% include link.html href="https://edit.anli5005.rocks" title="anliEdit" description="Edit Markdown files" domain="edit.anli5005.rocks" target="_blank" %}
+        {% include link.html href="https://blockr.app" title="Blockr" description="Organize debate blocks" domain="blockr.app" target="_blank" %}
+      </div>
+    </div>
+  </div>
 </div>
 {% include footer.html %}
