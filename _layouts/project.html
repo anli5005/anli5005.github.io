@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<p><a href="/projects"><i class="fas fa-arrow-left"></i> Back to Projects</a></p>
+
+<h1>{{page.title}} <small class="text-secondary">{{page.year}}</small></h1>
+{% if page.short %}<p><em>{{page.short}}</em></p>{% endif %}
+{% include technologies.html technologies=page.technologies %}
+{% if page.description %}<p class="lead">{{page.description}}</p>{% endif %}
+
+{{content}}
+
+{% if page.projecturl %}
+<p>
+  <a href="{{page.projecturl}}" target="_blank" {% if page.brandbg %}class="btn shadow-hover" style="background-color: {{page.brandbg}}; color: {{page.brandtext}}"{% else %}class="btn shadow-hover btn-primary"{% endif %}>
+    {% if page.domain %}{{page.domain}}{% else %}View Project{% endif %} <i class="fas fa-arrow-right"></i>
+  </a>
+</p>
+{% endif %}

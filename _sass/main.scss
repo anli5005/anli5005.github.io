@@ -158,3 +158,38 @@ html, body {
     margin-bottom: 0;
   }
 }
+
+.shadow-hover {
+  box-shadow: $box-shadow;
+  transition: box-shadow 0.2s, background-color 0.2s;
+
+  &:hover, &:focus {
+     box-shadow: $box-shadow-lg;
+  }
+}
+
+.project {
+  @extend .shadow-hover;
+  background-color: white;
+  color: $text;
+  display: block;
+  border-radius: $border-radius-lg;
+  padding: $spacer * 1.5;
+  padding-bottom: $spacer * 2.5 + $btn-padding-y * 2 + $btn-line-height;
+  margin-bottom: $spacer;
+
+  &:hover {
+    color: $text;
+    text-decoration: none;
+  }
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-container > .btn {
+  position: absolute;
+  left: $spacer * 1.5;
+  bottom: $spacer * 1.5;
+}

@@ -1,0 +1,7 @@
+{% if include.technologies %}
+<p>
+  {% for technology in include.technologies %}
+  <span class="badge badge-secondary">{{technology}}</span>
+  {% endfor %}
+</p>
+{% endif %}

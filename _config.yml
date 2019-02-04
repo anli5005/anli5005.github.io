@@ -27,6 +27,18 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      navItem: "projects"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
 
 # Build settings
 
