@@ -9,6 +9,7 @@ year: 2019
 brandbg: "#1976d2"
 brandtext: "#b9f6ca"
 priority: 997
+quicklink: true
 ---
 
 anliEdit forks [StackEdit](https://stackedit.io).

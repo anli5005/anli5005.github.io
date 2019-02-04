@@ -9,4 +9,5 @@ year: 2019
 brandbg: "#00796b"
 brandtext: "#e0f2f1"
 priority: 1000
+quicklink: true
 ---

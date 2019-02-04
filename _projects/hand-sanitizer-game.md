@@ -9,6 +9,7 @@ year: 2017
 brandbg: "rgb(180, 203, 250)"
 brandtext: "rgb(59, 120, 246)"
 priority: -1
+quicklink: true
 ---
 
 Hand sanitizer image from [Flaticon](https://flaticon.com).

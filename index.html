@@ -22,16 +22,13 @@ title: anli5005
     <div class="col-12 col-lg-6 pl-5 pl-md-0">
       <h3 class="heading-muted">Quick Links</h3>
       <div class="d-flex flex-wrap">
-        {% include link.html href="https://app.agendas.co" title="Agendas" description="Jot down tasks" domain="app.agendas.co" target="_blank" bg="#e8f5e9" color="#087f23" %}
-        {% include link.html href="https://yourbcabus.com" title="YourBCABus" description="Track BCA buses" domain="yourbcabus.com" target="_blank" bg="#00796b" color="#e0f2f1" %}
-        {% include link.html href="https://edit.anli5005.rocks" title="anliEdit" description="Edit Markdown files" domain="edit.anli5005.rocks" target="_blank" bg="#1976d2" color="#b9f6ca" %}
-        {% include link.html href="https://blockr.app" title="Blockr" description="Organize debate blocks" domain="blockr.app" target="_blank" bg="#8e24aa" color="#bbdefb" %}
-        {% include link.html href="https://anli5005.rocks/Sorts" title="Sorts" description="Digitize word sorts" domain="anli5005.rocks/Sorts" target="_blank" bg="#666666" color="#dddddd" %}
-        {% include link.html href="https://anli5005.rocks/hand-sanitizer-game" title="Hand Sanitizer Game" description="Germs, sanitation, pandas!" domain="anli5005.rocks/hand-sanitizer-game" target="_blank" color="rgb(59, 120, 246)" %}
-        {% include link.html href="https://anli5005.rocks/mlg-soundboard" title="MLG Soundboard" description="<em>Don't ask why</em>" domain="anli5005.rocks/mlg-soundboard" target="_blank" color="#f44336" %}
-        {% include link.html href="https://anli5005.rocks/spinning-wheel-web" title="Spinning Wheel" description="<i class='fas fa-circle-notch fa-spin'></i>" domain="anli5005.rocks/spinning-wheel-web" target="_blank" color="#666666" %}
+        {% assign quicklinks = site.projects | where:"quicklink",true | sort:"priority" | reverse %}
+        {% for link in quicklinks %}
+        {% include link.html href=link.projecturl title=link.title description=link.short domain=link.domain bg=link.brandbg color=link.brandtext %}
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
+{{site.collections.projects.agendas.title}}
 {% include footer.html %}
