@@ -21,12 +21,13 @@ title: anli5005
   <div class="row">
     <div class="col-12 col-lg-6 pl-5 pl-md-0">
       <h3 class="heading-muted">Quick Links</h3>
-      <div class="d-flex flex-wrap">
+      <div class="d-flex flex-wrap mb-3">
         {% assign quicklinks = site.projects | where:"quicklink",true | sort:"priority" | reverse %}
         {% for link in quicklinks %}
         {% include link.html href=link.projecturl title=link.title description=link.short domain=link.domain bg=link.brandbg color=link.brandtext %}
         {% endfor %}
       </div>
+      <p class="font-weight-bold"><a href="/projects">All projects <i class="fas fa-arrow-right"></i></a></p>
     </div>
   </div>
 </div>
