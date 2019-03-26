@@ -7,5 +7,4 @@ year: 2014
 brandbg: "rgb(113, 65, 29)"
 brandtext: "rgb(93, 194, 231)"
 priority: 2
-quicklink: true
 ---
