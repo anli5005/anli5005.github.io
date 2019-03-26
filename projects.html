@@ -6,8 +6,12 @@ navItem: projects
 <h1>Projects</h1>
 <p class="lead">I've made several projects over the years. Here are some of them:</p>
 
+{% assign projectGroups = site.projects | sort:"year" | reverse | group_by:"year" %}
+{% for projectGroup in projectGroups %}
+
+<h2 class="mt-4">{{projectGroup.name}}</h2>
 <div class="row">
-  {% assign projects = site.projects | sort:"priority" | reverse %}
+  {% assign projects = projectGroup.items | sort:"priority" | reverse %}
   {% for project in projects %}
   <div class="project-container col-12 col-md-6">
     <a class="project" href="{{project.url}}">
@@ -24,3 +28,7 @@ navItem: projects
   </div>
   {% endfor %}
 </div>
+
+{% endfor %}
+
+<p>For even more projects, check my <a href="https://github.com/anli5005">Github.</a></p>
