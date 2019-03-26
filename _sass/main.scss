@@ -176,7 +176,7 @@ html, body {
   border-radius: $border-radius-lg;
   padding: $spacer * 1.5;
   padding-bottom: $spacer * 2.5 + $btn-padding-y * 2 + $btn-line-height;
-  margin-bottom: $spacer;
+  height: 100%;
 
   &:hover {
     color: $text;
@@ -186,6 +186,8 @@ html, body {
 
 .project-container {
   position: relative;
+  padding-left: 0;
+  margin-bottom: $spacer;
 }
 
 .project-container > .btn {

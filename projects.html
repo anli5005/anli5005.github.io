@@ -6,19 +6,21 @@ navItem: projects
 <h1>Projects</h1>
 <p class="lead">I've made several projects over the years. Here are some of them:</p>
 
-{% assign projects = site.projects | sort:"priority" | reverse %}
-{% for project in projects %}
-<div class="project-container">
-  <a class="project" href="{{project.url}}">
-    <h2>{{project.title}}{% if project.year %} <small class="text-secondary">{{project.year}}</small>{% endif %}</h2>
-    {% if project.short %}<p><em>{{project.short}}</em></p>{% endif %}
-    {% include technologies.html technologies=project.technologies %}
-    {% if project.description %}<p class="lead">{{project.description}}</p>{% endif %}
-  </a>
-  {% if project.projecturl %}
-  <a href="{{project.projecturl}}" target="_blank" {% if project.brandbg %}class="btn" style="background-color: {{project.brandbg}}; color: {{project.brandtext}}"{% else %}class="btn btn-primary"{% endif %}>
-    {% if project.domain %}{{project.domain}}{% else %}View Project{% endif %} <i class="fas fa-arrow-right"></i>
-  </a>
-  {% endif %}
+<div class="row">
+  {% assign projects = site.projects | sort:"priority" | reverse %}
+  {% for project in projects %}
+  <div class="project-container col-12 col-md-6">
+    <a class="project" href="{{project.url}}">
+      <h2>{{project.title}}{% if project.year %} <small class="text-secondary">{{project.year}}</small>{% endif %}</h2>
+      {% if project.short %}<p><em>{{project.short}}</em></p>{% endif %}
+      {% include technologies.html technologies=project.technologies %}
+      {% if project.description %}<p class="lead">{{project.description}}</p>{% endif %}
+    </a>
+    {% if project.projecturl %}
+    <a href="{{project.projecturl}}" target="_blank" {% if project.brandbg %}class="btn" style="background-color: {{project.brandbg}}; color: {{project.brandtext}}"{% else %}class="btn btn-primary"{% endif %}>
+      {% if project.domain %}{{project.domain}}{% else %}View Project{% endif %} <i class="fas fa-arrow-right"></i>
+    </a>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}
