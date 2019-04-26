@@ -3,8 +3,21 @@
 @import 'safearea';
 @import 'social';
 
+:root {
+  --link-color: $link-color;
+  --link-color-hover: $link-hover-color;
+}
+
 html, body {
   min-height: 100%;
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover, &:active, &:focus {
+    color: var(--link-color-hover);
+  }
 }
 
 .logo-arcs {
@@ -12,7 +25,7 @@ html, body {
   top: 0;
   left: 0;
   transform-origin-x: 50%;
-  transform-origin-y: 48%;
+  transform-origin-y: 55%;
   opacity: 0;
 }
 
