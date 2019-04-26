@@ -1,3 +1,5 @@
+let interfaceThemeItemName = "dev.anli.site.interface-theme";
+
 window.addEventListener("load", () => {
   let arcs = document.querySelectorAll(".logo-animated .logo-arcs");
   if (arcs) {
@@ -68,4 +70,27 @@ window.addEventListener("load", () => {
       applyNavbarClasses(e);
     });
   }
+
+  refreshInterfaceTheme();
+
+  let themeSelect = document.getElementById("interface-theme-select");
+  themeSelect.value = localStorage.getItem(interfaceThemeItemName);
+  themeSelect.addEventListener("change", () => {
+    localStorage.setItem(interfaceThemeItemName, themeSelect.value);
+    refreshInterfaceTheme();
+  });
 });
+
+function refreshInterfaceTheme() {
+  let theme = localStorage.getItem(interfaceThemeItemName);
+  if (theme === "dark") {
+    document.body.classList.remove("light-interface");
+    document.body.classList.add("dark-interface");
+  } else if (theme === "light") {
+    document.body.classList.add("light-interface");
+    document.body.classList.remove("dark-interface");
+  } else {
+    document.body.classList.remove("light-interface");
+    document.body.classList.remove("dark-interface");
+  }
+}
