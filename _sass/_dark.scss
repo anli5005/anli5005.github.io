@@ -1,8 +1,6 @@
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: $dark-bg;
-    color: $dark-text;
-  }
+@mixin dark-interface {
+  background-color: $dark-bg;
+  color: $dark-text;
 
   a {
     color: $dark-link;
@@ -12,12 +10,54 @@
     }
   }
 
+  .btn-primary { // TODO: Remove
+    color: white;
+  }
+
   .navbar-anli {
     background-color: $dark;
+
+    .navbar-nav {
+      .nav-link {
+        text-transform: uppercase;
+        color: rgba($dark-text, 0.4);
+
+        &:hover, &:active {
+          color: rgba($dark-text, 0.7);
+        }
+
+        &:focus {
+          color: rgba($dark-text, 0.9);
+        }
+      }
+
+      .nav-item.active .nav-link {
+        color: $dark-text;
+      }
+    }
   }
 
   .jumbo-header {
     background-color: $dark;
     color: $dark-link;
+  }
+
+  .project {
+    background-color: $dark;
+    color: $dark-text;
+
+    &:hover {
+      color: $dark-text;
+    }
+  }
+}
+
+.dark-interface {
+  @include dark-interface;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @include dark-interface;
   }
 }
