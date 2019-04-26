@@ -5,10 +5,17 @@ $primary: #337bed;
 $text: #0f2d5b;
 $dark: #25416c;
 
+$dark-bg: #111c35;
+$dark-text: $light;
+$dark-link: #6b9eed;
+
 $theme-colors: (
   "bg": $bg,
   "text": $text,
-  "github": #333
+  "github": #333,
+  "dark-bg": $dark-bg,
+  "dark-text": $dark-text,
+  "dark-link": $dark-link
 );
 
 $body-bg: $bg;

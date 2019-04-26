@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  a {
+    color: $dark-link;
+
+    &:hover {
+      color: darken($dark-link, 10%);
+    }
+  }
+
+  .navbar-anli {
+    background-color: $dark;
+  }
+
+  .jumbo-header {
+    background-color: $dark;
+    color: $dark-link;
+  }
+}

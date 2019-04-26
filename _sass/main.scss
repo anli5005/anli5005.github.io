@@ -195,3 +195,10 @@ html, body {
   left: $spacer * 1.5;
   bottom: $spacer * 1.5;
 }
+
+.jumbo-header {
+  background-color: $light;
+  color: $primary;
+}
+
+@import 'dark';
