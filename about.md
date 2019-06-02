@@ -23,4 +23,4 @@ I also have experience in video editing and graphic design, and am now working o
 
 If you want, you can check out some of my [work](/projects), or head to my [Github](https://github.com/anli5005).
 
-*(Contact info coming soon!)*
+[Contact info](/contact)
