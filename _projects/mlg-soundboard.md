@@ -1,12 +1,13 @@
 ---
 title: MLG Soundboard
-short: <em>Don't ask why</em>
+short: Why does this still exist?!
 description: Soundboard containing dead memes from your favorite montage parodies.
 technologies: [Web, AngularJS]
-projecturl: https://anli.dev/mlg-soundboard
-domain: anli.dev/mlg-soundboard
+projecturl: https://mlg.sketchy.dev
+domain: mlg.sketchy.dev
 year: 2016
 brandbg: "#fffafa"
 brandtext: "red"
 priority: -2
+quicklink: true
 ---
