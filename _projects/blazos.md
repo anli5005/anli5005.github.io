@@ -8,6 +8,6 @@ domain: tinyurl.com/blazosai
 year: 2019
 brandbg: "#000000"
 brandtext: "#1099ff"
-priority: 1001
+priority: 999
 quicklink: true
 ---
