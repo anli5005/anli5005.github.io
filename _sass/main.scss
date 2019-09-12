@@ -4,8 +4,8 @@
 @import 'social';
 
 :root {
-  --link-color: $link-color;
-  --link-color-hover: $link-hover-color;
+  --link-color: #{$link-color};
+  --link-color-hover: #{$link-hover-color};
 }
 
 html, body {
