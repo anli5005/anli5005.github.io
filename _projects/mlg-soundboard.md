@@ -9,5 +9,4 @@ year: 2016
 brandbg: "#fffafa"
 brandtext: "red"
 priority: -2
-quicklink: true
 ---
