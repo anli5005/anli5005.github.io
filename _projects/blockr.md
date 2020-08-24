@@ -9,5 +9,4 @@ year: 2018
 brandbg: "#8e24aa"
 brandtext: "#bbdefb"
 priority: 999
-quicklink: true
 ---

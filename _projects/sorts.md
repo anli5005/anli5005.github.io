@@ -9,5 +9,4 @@ year: 2014
 brandbg: "#666666"
 brandtext: "#dddddd"
 priority: 0
-quicklink: true
 ---
