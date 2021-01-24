@@ -1,36 +1,10 @@
 ---
-layout: empty
 title: anli5005
 notitleprefix: true
 ---
 
-<header class="jumbo-header py-5 pl-sa">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 col-lg-4 col-xl-2 d-flex justify-content-center align-items-center">
-        {% include logo.html class="logo-animated w-100 header-logo" %}
-      </div>
-      <div class="col">
-        <h1 class="display-4 text-center text-md-left">Anthony Li <small class="lead font-weight-bold">anli5005</small></h1>
-        <p class="text-center text-md-left">I make random stuff. Some of said stuff might be helpful or entertaining. BCA ATCS '22</p>
-      </div>
-    </div>
-  </div>
-</header>
-{% include nav.html sticky="true" %}
 <div class="container py-5 pl-sa" id="main">
-  <div class="row">
-    <div class="col-12 col-lg-6 pl-5 pl-md-0">
-      <h3 class="heading-muted">Quick Links</h3>
-      <div class="d-flex flex-wrap mb-3">
-        {% assign quicklinks = site.projects | where:"quicklink",true | sort:"priority" | reverse %}
-        {% for link in quicklinks %}
-        {% include link.html href=link.projecturl title=link.title description=link.short domain=link.domain bg=link.brandbg color=link.brandtext %}
-        {% endfor %}
-      </div>
-      <p class="font-weight-bold"><a href="/projects">All projects <i class="fas fa-arrow-right"></i></a></p>
-    </div>
+  <div class="d-flex flex-wrap mb-3">
+    {% include link.html href="https://anli.dev" title="New site!" description="Visit it" domain="anli.dev" %}
   </div>
 </div>
-{{site.collections.projects.agendas.title}}
-{% include footer.html %}
